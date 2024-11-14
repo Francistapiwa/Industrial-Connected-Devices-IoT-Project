@@ -39,9 +39,9 @@ NOTE: TA's will execute your unit tests. You only need to list each test case be
 since you need to ensure you haven't introduced regressions.
 
 - ActuatorDataTest
--SensorDataTest
--SystemPerformanceDataTest
--SystemStateDataTest
+- SensorDataTest
+- SystemPerformanceDataTest
+- SystemStateDataTest
 - DataUtilTest
 - 
 

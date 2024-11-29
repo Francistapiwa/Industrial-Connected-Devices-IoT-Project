@@ -25,7 +25,7 @@ This setup provides a flexible, scalable solution for managing IoT resources and
 
 NOTE: Be sure to include the branch (e.g. https://github.com/programming-the-iot/python-components/tree/alpha001).
 
-URL: 
+URL: https://github.com/Francistapiwa/python-components/tree/lab08
 
 ### UML Design Diagram(s)
 

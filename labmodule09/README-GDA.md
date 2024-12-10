@@ -108,7 +108,7 @@ since you need to ensure you haven't introduced regressions.
 - SystemStateDataTest
 - DataUtilTest
 - 
-- 
+
 
 ### Integration Tests Executed
 
@@ -122,8 +122,7 @@ test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 - DeviceDataManagerNoCommsTest
 - MqttClientConnectorTest
 - CoapClientToServerConnectorTest
-
-- 
-- 
+- CloudClientConnectorTest
+ 
 
 EOF.

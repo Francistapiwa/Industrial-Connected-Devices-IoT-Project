@@ -1,79 +1,66 @@
-# Programming the IoT - Book Exercise Docs
+Industrial-Connected-Devices-IoT-Project 
+This project demonstrates the development and implementation of an IoT system focused on integrating edge devices with cloud platforms using various technologies such as Python, Java, Git, and Linux shell scripting. The goal was to design and build a functional IoT solution that supports real-time data collection, device communication, and cloud integration.
 
-If you're a student of Connected Devices, clone this repository so you can capture the documentation artifacts
-for each Lab Module exercise you'll implement as part of this course.
+Project Overview
+The project is built upon key IoT concepts such as:
 
-If you're reading [Programming the Internet of Things](https://learning.oreilly.com/library/view/programming-the-internet/9781492081401/), whether as a student of my IoT course or for fun, you can also use this repository to help track your progress with the exercises using the simple Markdown checklists provided in each sub-directory.
+IoT Architectures (Edge to Cloud): Designing a scalable architecture that connects edge devices to the cloud for processing and analysis.
 
-# What You'll Find In This Project
+Edge Sensing and Actuation: Utilizing sensors and actuators on edge devices (e.g., Raspberry Pi) to collect data and perform actions in the physical world.
 
-Each sub-directory maps to a specific Lab Module, which also aligns to the exercises listed in [Programming the Internet of Things](https://learning.oreilly.com/library/view/programming-the-internet/9781492081401/).
-Within each sub-directory are the Markdown files that correlate to the documentation you can fill out related to each Chapter's exercise, as follows:
-  - CDA-REQ-CHECKLIST.md: Use this to check off the CDA-specific (Constrained Device App) exercise tasks for the named Lab Module. This file will only exist if there are CDA-specific tasks to complete.
-  - GDA-REQ-CHECKLIST.md: Use this to check off the GDA-specific (Gateway Device App) exercise tasks for the named Lab Module. This file will only exist if there are GDA-specific tasks to complete.
-  - CSF-REQ-CHECKLIST.md: Use this to check off the CSF-specific (Cloud Service Functions) exercise tasks for the named Lab Module. This file will only exist if there are CSF-specific tasks to complete.
-  - README-CDA.md: Use this to document your CDA-specific design. This file will only exist if there is CDA-specific documentation to complete.
-  - README-GDA.md: Use this to document your GDA-specific design. This file will only exist if there is GDA-specific documentation to complete.
-  - README-CSF.md: Use this to document your CSF-specific design. This file will only exist if there is CSF-specific documentation to complete.
-  - README-PROJECT-PROPOSAL.md: Use this to document your Semester Project Proposal. This file only exists as part of Lab Module 12.
-  - README-PROJECT-FINAL.md: Use this to document your Semester Project Final Write-up. This file only exists as part of Lab Module 12.
+Data Simulation and Management: Creating data simulations to mimic real-world sensor data, which can be used for testing and scaling the system.
 
-If you're reading this Markdown page, you may be asking yourself, "do I need to complete this documentation?". If...
-  - You're in my Connected Devices class, yes - these are required as part of each Lab Module submission.
-  - You're reading [Programming the Internet of Things](https://learning.oreilly.com/library/view/programming-the-internet/9781492081401/), it's completely up to you.
-  - Neither of the above apply to you, it's completely up to you.
+MQTT & CoAP Messaging Protocols: Implementing lightweight communication protocols (MQTT and CoAP) to enable efficient message transmission between devices in the IoT network.
 
-## Links, Exercises, Updates, Errata, and Clarifications
+Device Integration: Seamlessly integrating multiple IoT devices (e.g., sensors, actuators) into the system for communication and control.
 
-Please see the following links to access exercises, errata / clarifications, and the e-book:
- - [Programming the IoT Kanban Board](https://github.com/orgs/programming-the-iot/projects/1)
- - [Errata and Clarifications](https://labbenchstudios.com/programming-the-iot-book/programming-the-iot-1st-edition/)
- - [Programming the Internet of Things Book](https://learning.oreilly.com/library/view/programming-the-internet/9781492081401/)
+Cloud Integration: Connecting devices to cloud services for centralized data storage, processing, and visualization.
 
-## About the Exercises
+Key Technologies & Tools Used
+Python & Java: Used for writing the backend logic, data processing, and communication between devices and cloud.
 
-You can review the specific exercises for each Lab Module using the Kanban project board I setup at the following link:
-[Programming the IoT Kanban Board](https://github.com/orgs/programming-the-iot/projects/1)
+MQTT & CoAP: Implemented as messaging protocols to ensure lightweight and efficient communication across IoT devices.
 
-Here's the breakdown of each: 
-  - [Lab Module 01: Setup](https://github.com/programming-the-iot/book-exercise-tasks/issues/167)
-  - [Lab Module 02: Create Initial Apps](https://github.com/programming-the-iot/book-exercise-tasks/issues/202)
-  - [Lab Module 03: Data Simulation](https://github.com/programming-the-iot/book-exercise-tasks/issues/170)
-  - [Lab Module 04: Hardware Emulation](https://github.com/programming-the-iot/book-exercise-tasks/issues/172)
-  - [Lab Module 05: Data Management](https://github.com/programming-the-iot/book-exercise-tasks/issues/174)
-  - [Lab Module 06: MQTT Client - CDA](https://github.com/programming-the-iot/book-exercise-tasks/issues/177)
-  - [Lab Module 07: MQTT Client - GDA](https://github.com/programming-the-iot/book-exercise-tasks/issues/180)
-  - [Lab Module 08: CoAP Server](https://github.com/programming-the-iot/book-exercise-tasks/issues/183)
-  - [Lab Module 09: CoAP Clients](https://github.com/programming-the-iot/book-exercise-tasks/issues/186)
-  - [Lab Module 10: Edge Integration](https://github.com/programming-the-iot/book-exercise-tasks/issues/189)
-  - [Lab Module 11: Cloud Integration](https://github.com/programming-the-iot/book-exercise-tasks/issues/193)
-  - [Lab Module 12: Semester Project](https://github.com/programming-the-iot/book-exercise-tasks/issues/195)
-  
-# Other Things to Know
+Git: Version control to manage and collaborate on the project codebase.
 
-## Pull Requests
+Raspberry Pi: Used for testing the integration of edge devices with sensors and actuators.
 
-In general, PR's are disabled, at least while the codebase and documentation are being developed.
+Linux Shell Scripting: Automated various tasks and management processes to streamline development and deployment.
 
-## Updates
+Cloud Platforms: Integrated IoT devices with cloud platforms to store and analyze data from connected devices.
 
-Much of the tasks and issues representing requirements within this repository will continue to evolve, so you may want to check back regularly for potential updates. Please note that this repository is still under active development - you'll likely find typos and other errata.
+Project Development
+The development process involved creating a series of interconnected IoT modules that progressively became more complex. Each module served as the foundation for the next, involving both hardware (Raspberry Pi, sensors) and software components (Python scripts, messaging protocols). The following key features were developed:
 
-# License
+Edge Device Setup: Configured Raspberry Pi devices with sensors (temperature, humidity, motion) and actuators (e.g., motors, lights) for real-time data collection and control.
 
-*This README.md File - Usage and License*
+Data Collection & Simulation: Developed Python scripts to simulate sensor data and emulated real-world scenarios for testing purposes.
 
- - The following files are &copy; 2020 - 2024 by [Andrew D. King](https://andyking.me)</a> and licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/ " target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0 <img height="24" style="!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img height="24" style="!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img height="24" style="!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img height="24" style="!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a>
-   - README.md
+Messaging Protocols: Implemented MQTT and CoAP for device-to-device and device-to-cloud communication, ensuring low-latency and high-efficiency messaging.
 
-*All {prefix}-CHECKLIST.md and Additional README-{postfix}.md Files - Usage and License*
+Cloud Integration: Integrated the system with cloud platforms to visualize data in real-time and perform analytics on the collected data.
 
- - The following template files are &copy; 2020 - 2024 by [Andrew D. King](https://andyking.me)</a> and licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0 <img height="24" style="!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img height="24" style="!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a>
-   - CDA-REQ-CHECKLIST.md
-   - GDA-REQ-CHECKLIST.md
-   - CSF-REQ-CHECKLIST.md
-   - README-CDA.md
-   - README-GDA.md
-   - README-CSF.md
-   - README-PROJECT-PROPOSAL.md
-   - README-PROJECT-FINAL.md
+Automation & Scripting: Wrote Linux shell scripts to automate repetitive tasks such as data processing, sensor readings, and device configuration.
+
+Achievements
+Successfully integrated multiple IoT devices into a cohesive system capable of remote monitoring and control.
+
+Implemented robust communication protocols (MQTT and CoAP) to handle device messaging in real-time.
+
+Enabled data visualization and analytics via cloud integration, providing insights from sensor data.
+
+Automated critical processes using Python and shell scripting, reducing manual intervention and increasing system reliability.
+
+System Requirements
+Hardware: While not strictly required, I used a Raspberry Pi for device testing and integration.
+
+Software: The system can run on Windows 11 (WSL 2), macOS, or Linux. Most development was done using Python and Java on these platforms.
+
+Cloud Integration: The project includes cloud-based data storage and processing components, which are easily scalable for large deployments.
+
+Conclusion
+This project demonstrates my ability to develop and integrate IoT systems, covering everything from edge device setup to cloud-based data processing. By utilizing open-source technologies and widely-used protocols, I built a system capable of handling real-time data from multiple devices, ensuring seamless communication and automation.
+
+
+
+
